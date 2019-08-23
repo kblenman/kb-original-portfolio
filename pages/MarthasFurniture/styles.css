@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Raleway|Tangerine');
+
+html {
+	height: 100vh;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: lightgray url("livingroomBackground.jpg") center/cover no-repeat;
+}
+
+#mainDiv {
+	max-height: auto;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(255, 255, 255, 0.7);
+	box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19),
+				-4px -4px 8px 0 rgba(0, 0, 0, 0.2), -4px -6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#textDiv {
+	grid-area: textDiv;
+	display: flex;
+	flex-direction: column;
+	font-size: 100%;
+}
+
+#textDiv h1, #textDiv h2 {
+	font-family: 'Tangerine', cursive;
+}
+
+#textDiv p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	margin-left: 15px;
+	margin-right: 15px;
+	text-transform: capitalize;
+	letter-spacing: 3px;
+}
+
+#textDiv h1 {
+	text-align: center;
+	font-size: 7em;
+	margin-top: 20px;
+	color: rgb(30, 138, 140);
+	text-shadow: 2px 2px 15px black;
+}
+
+#textDiv h2 {
+	text-align: center;
+	margin-left: 30%;
+	margin-bottom: 50px;
+	border-bottom: 1px solid gray;
+	font-size: 4em;
+}
+
+.btn-outline-info {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	font-family: 'Raleway', sans-serif;
+	color: rgb(30, 138, 140);
+	letter-spacing: 2px;
+	border: 2px solid rgb(30, 138, 140);
+	border-left: none;
+	border-right: none;
+	border-radius: 0px;
+}
+
+.btn-outline-info:hover {
+	background-color: rgb(30, 138, 140);
+	border: 2px solid rgb(30, 138, 140);
+}
+
+

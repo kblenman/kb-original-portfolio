@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* ============================================
+	All Layouts
+   ============================================
+*/
+
+html {
+	height: 100vh;
+}
+
+#emptyBox {
+	grid-area: emptyBox;
+}
+
+#nameBox {
+	grid-area: nameBox
+}
+
+#logoBox {
+	grid-area: logoBox;
+}
+
+#navigationBox {
+	grid-area: navigationBox;
+}
+	
+#contentBox {
+	grid-area: contentBox;
+}
+
+#imageBox {
+	grid-area: imageBox;
+}
+
+#servicesBox {
+	grid-area: servicesBox;
+}
+
+#servicesHeader {
+	grid-area: servicesHeader;
+}
+
+#serviceOptions {
+	grid-area: serviceOptions;
+}
+
+footer {
+	grid-area: footer;
+}
+
+
+/* Hide/Show navigation submenu */
+
+ul.subMenu {
+	display: none;
+}
+
+a.title:hover+ul.subMenu, ul.subMenu:hover {
+	display: block;
+}
+
+
+/* ============================================
+	Non-Mobile Layout (800px and Above)
+   ============================================
+*/
+
+@media only screen and (min-width: 800px) {
+	
+	body {
+		min-height: 100%;
+		display: grid;
+		
+		grid-template-rows: 1.3fr 5fr .1fr;
+		grid-template-columns: .15fr 1fr;
+		
+		grid-template-areas: "logoBox			emptyNameBox"
+							 "navigationBox		contentBox"
+							 "footer			footer";
+	}
+
+
+	#emptyNameBox {		
+		display: grid;
+		grid-template-rows: 3fr 2fr;
+		grid-template-areas: "emptyBox"
+							 "nameBox";	
+	}
+
+
+	#contentBox {
+		display: grid;
+		grid-template-rows: 2fr 1.5fr;
+		grid-template-areas: "imageBox"
+							 "servicesBox";
+	}
+
+	#servicesBox {
+		display: grid;
+		grid-template-rows: 0.12fr 1fr;
+		grid-template-areas: "servicesHeader"
+							 "serviceOptions";
+	}
+
+	#serviceOptions {
+		display: flex;
+		flex-flow: row nopwrap;
+	}
+
+	#serviceOptions > div {
+		padding: 2%;
+	}
+
+	
+}
+
+	
+
+/* ============================================
+	Tablet and Mobile Layout: 0 - 799 pixels
+   ============================================
+*/
+
+@media only screen and (max-width: 799px) {
+	
+	body {
+		min-height: 100%;
+		display: grid;
+
+		grid-template-rows: 1fr .2fr .7fr .05fr;
+		grid-template-areas: "logoBox"
+							 "navigationBox"
+							 "contentBox"
+							 "footer";
+	}
+
+	#imageBox {
+		display: none;
+	}
+	
+}

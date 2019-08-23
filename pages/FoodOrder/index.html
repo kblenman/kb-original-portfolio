@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Island Breeze</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+	</head>
+	<body>
+		<div id="headerContainer">
+			<h1>Island Breeze</h1>
+			<p>The best tropical flavors found in Florida</p>
+		</div>
+
+		<div id="menuItemsContainer">
+			<div class="menuItem">
+				<div class="itemInfo">
+					<div class="itemImage">
+						<img src="images/carrotCremeSoup.jpg">
+					</div>
+					<h2>Carrot Creme Soup</h2>
+					<p>$10</p>
+				</div>
+				<div class="itemButtonContainer">
+					<button class="addToCart btn btn-block shadow-none"
+							data-itemName="Carrot Creme Soup"
+							data-itemCost="10">Add to cart
+					</button>
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="itemInfo">
+					<div class="itemImage">
+						<img src="images/paradiseChicken.jpg">
+					</div>
+					<h2>Paradise Chicken</h2>
+					<p>$20</p>
+				</div>
+				<div class="itemButtonContainer">
+					<button class="addToCart btn btn-block shadow-none"
+							data-itemName="Paradise Chicken"
+							data-itemCost="20">Add to cart
+					</button>
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="itemInfo">
+					<div class="itemImage">
+						<img src="images/spinachSoup.jpg">
+					</div>
+					<h2>Spinach Soup</h2>
+					<p>$10</p>
+				</div>
+				<div class="itemButtonContainer">
+					<button class="addToCart btn btn-block shadow-none"
+							data-itemName="Spinach Soup"
+							data-itemCost="10">Add to cart
+					</button>
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="itemInfo">
+					<div class="itemImage">
+						<img src="images/salmonSalad.jpg">
+					</div>
+					<h2>Salmon Salad</h2>
+					<p>$25</p>
+				</div>
+				<div class="itemButtonContainer">
+					<button class="addToCart btn btn-block shadow-none"
+							data-itemName="Salmon Salad"
+							data-itemCost="25">Add to cart
+					</button>
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="itemInfo">
+					<div class="itemImage">
+						<img src="images/shrimpPasta.jpg">
+					</div>
+					<h2>Shrimp Pasta</h2>
+					<p>$22</p>
+				</div>
+				<div class="itemButtonContainer">
+					<button class="addToCart btn btn-block shadow-none"
+							data-itemName="Shrimp Pasta"
+							data-itemCost="22">Add to cart
+					</button>
+				</div>
+			</div>
+			<div class="menuItem">
+				<div class="itemInfo">
+					<div class="itemImage">
+						<img src="images/tropicalChickenSalad.jpg">
+					</div>
+					<h2>Tropical Chicken Salad</h2>
+					<p>$20</p>
+				</div>
+				<div class="itemButtonContainer">
+					<button class="addToCart btn btn-block shadow-none"
+							data-itemName="Tropical Chicken Salad"
+							data-itemCost="20">Add to cart
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="cartContainer">
+			<div id="cartHeader">
+				<p>Shopping Cart</p>
+			</div>
+			<div id="cartItemsContainer">
+				<!--EXAMPLE OF A CART ITEM
+				<div class="cartItem"
+				id="itemName"
+				data-itemName="x"
+				data-itemCost="y">
+					<p>Item Item 1</p>
+					<select name="quantity">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+					<button class="deleteItem"
+							data-linkedItem="itemName">Remove</button>
+				</div> -->
+			</div>
+			<div id="cartTotal">
+				<p>Total:</p>
+				<p id="total">$ 0.00</p>
+			</div>
+			<div id="cartCheckOut">
+				<button class = "btn btn-block shadow-none"
+						id="checkOut">Check Out</button>
+			</div>
+		</div>
+
+		<footer>
+		</footer>
+
+		<script type="text/javascript" src="foodOrderScript.js">
+		</script>
+	</body>
+</html>

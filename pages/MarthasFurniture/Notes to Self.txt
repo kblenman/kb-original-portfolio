@@ -1,0 +1,5 @@
+- Used Animation.css and Bootstrap
+	- Animation.css for animations
+	- Bootstrap for "Enter Site" button
+- Animations and one font only compatible with Google and FireFox browsers.
+- Layout using CSS Grid

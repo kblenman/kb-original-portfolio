@@ -1,0 +1,105 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans|Raleway');
+/* ============================================
+	General Colors, Outlines, and Formatting
+   ============================================
+*/
+
+body {
+	background-color: rgb(79, 97, 127);
+	font-family: 'Open Sans', sans-serif;
+}
+
+#nameBox, #servicesBox {
+	background-color: rgba(192, 205, 226, 0.9);
+}
+
+#emptyBox, footer {
+	background-color: rgb(17, 29, 51);
+}
+
+#navigationBox, #logoBox {
+	border-right: 1px solid rgb(17, 29, 51);
+}
+
+
+ul.subMenu {
+	background-color: rgba(192, 205, 226, 0.9);
+}
+
+#mainMenu > li {
+	outline: 2px dotted rgb(17, 29, 51);
+}
+
+#mainMenu > li {
+	margin: 10px;
+}
+
+#servicesHeader {
+	background-color: rgb(57, 63, 73);
+}
+
+#serviceOptions > div {
+	outline: 1px solid rgb(17, 29, 51);
+}
+
+
+/*
+.mainMenu > li > a {
+	outline: 1px solid red;
+}
+*/
+
+
+/* ============================================
+	Images
+   ============================================
+*/
+
+#imageBox {
+	background: url(../images/centerPic.jpg) center / cover no-repeat;
+}
+
+#logoBox {
+	background: url(../images/newLogo.png) center / cover no-repeat;
+}
+
+
+/* ============================================
+	Text Styles and Colors
+   ============================================
+*/
+#mainMenu > li > a:visited, #mainMenu > li > a:link {
+	color: white;
+	font-family: 'Indie Flower', cursive;
+}
+
+.subMenu a:visited, .subMenu a:link {
+	color: black;
+	font-family: 'Raleway', sans-serif;
+}
+
+#mainMenu li {
+	text-align: center;
+}
+
+#servicesHeader h1 {
+	text-align: center;
+	color: white;
+	font-size: 1.5em;
+	font-family: 'Raleway', sans-serif;
+	padding: 10px;
+	text-shadow: 2px 2px 1px black;
+}
+
+#serviceOptions {
+	text-align: center;
+}
+
+#serviceOptions h2 {
+	margin-bottom: 10px;
+}
+
+#serviceOptions p {
+	margin-bottom: 10px;
+}
